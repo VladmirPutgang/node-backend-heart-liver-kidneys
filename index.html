@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liver, Kidneys, Heart</title>
+
+</head>
+
+<body>
+  <p>The game is a twist on <b>Rock</b>, <b>Paper</b>, <b>Scissors</b> the premise is simple, each organ is capable of
+    destroying one other organ, but is susceptible to the special move of it's superior organ. The Kidneys spike the
+    blood pressure causing a heart attack. The Heart ceases circulation depriving the Liver of precious oxygen rich
+    blood. The Liver secretes poisons that is nephrotoxic and causes the Kidneys to shut down.</p>
+  <!-- The buttons below are tied to javascript functions through event listeners in the main.js file. -->
+  <button id="heart" type="button" name="button" value="heart">Heart</button>
+  <button id="liver" type="button" name="button" value="liver">Liver</button>
+  <button id="kidneys" type="button" name="button" value="kidneys">Kidneys</button>
+  <h2 id="result">You: </h2>
+
+
+  <!-- The script tag below asks the server for the main.js file in the server's /js/ file. So on the server.js file node needs a defined route for the page '/js/main.js' that reads the file and returns it as a javascript file. That's why our browser side javascript with the buttons didn't work. -->
+  <script type="text/javascript" src="/js/main.js"></script>
+</body>
+
+</html>
